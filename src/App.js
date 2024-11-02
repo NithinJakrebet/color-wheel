@@ -1,12 +1,15 @@
 import React from 'react';
+import { Container, Typography } from '@mui/material';
 import ColorPicker from './components/ColorPicker';
 
 function App() {
   return (
-    <div style={{ textAlign: 'center' }}>
-      <h1>Color Picker with HEX Display</h1>
+    <Container maxWidth="sm" style={{ textAlign: 'center', marginTop: '50px' }}>
+      <Typography variant="h4" gutterBottom>
+        Color Picker with Material UI
+      </Typography>
       <ColorPicker />
-    </div>
+    </Container>
   );
 }
 
